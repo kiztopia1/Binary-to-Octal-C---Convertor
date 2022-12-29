@@ -1,6 +1,5 @@
 #include <iostream>
-#include <math.h>
-#include <vector>
+
 using namespace std;
 
 int binaryToDecimal(int binary)
@@ -30,8 +29,8 @@ void decimalToOctal(int decimal)
         decimal = decimal / 8;
         i++;
     }
-	cout << i<< endl;
-    for (int j = i-1 ; j >= 0; j--)
+    cout << i << endl;
+    for (int j = i - 1; j >= 0; j--)
     {
         cout << octal[j];
     }
@@ -47,7 +46,7 @@ int main()
     cin >> binary;
 
     decimal = binaryToDecimal(binary);
-    
+
     decimalToOctal(decimal);
 
     return 0;
